@@ -17,5 +17,6 @@
 <div th:if="${message}">
     <h2 th:text="${message}"/>
 </div>
+<img src="data:image/jpeg;base64,${photo}" />
 </body>
 </html>
