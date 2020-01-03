@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/444aed36-5881-4e6a-8039-976ab7310273.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/444aed36-5881-4e6a-8039-976ab7310273.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photoGallery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoFileService.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +59,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="photo-gallery: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="comments: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="photo-gallery: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="photos: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -63,6 +74,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,6 +96,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -98,22 +111,69 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="PhotoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="photoGallery" />
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="PhotoFileService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="PhotoFileService" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="PhotoFileService" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="photoGallery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PhotoApp" />
+        <item itemvalue="Spring Boot.PhotoServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +189,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e88f28e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6196abbf" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@748b6fd6" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -147,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
-      <workItem from="1577972247274" duration="6298000" />
+      <workItem from="1577972247274" duration="21901000" />
     </task>
     <servers />
   </component>

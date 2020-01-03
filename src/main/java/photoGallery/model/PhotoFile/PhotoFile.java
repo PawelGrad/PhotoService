@@ -1,6 +1,10 @@
 package photoGallery.model.PhotoFile;
 
+import photoGallery.model.photoComment.PhotoComment;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "photos")
@@ -20,6 +24,9 @@ public class PhotoFile {
 
     @Lob
     private byte[] data;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true)
+    private List<PhotoComment> comments = new ArrayList<>();
 
     public PhotoFile() {
     }

@@ -17,7 +17,6 @@ public class PhotoFileService {
         this.photoFileRepository = photoFileRepository;
     }
 
-
     public void storeFile(MultipartFile file) {
         // Normalize file name
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
@@ -28,14 +27,12 @@ public class PhotoFileService {
                 ///throw new FileStorageException("Sorry! Filename contains invalid path sequence " + fileName);
                 System.out.println("ZROB WYJATEK");
             }
-
             PhotoFile photoFile = new PhotoFile();
             photoFile.setFileName(fileName);
             photoFile.setFileType(file.getContentType());
             photoFile.setData(file.getBytes());
             photoFile.setRating(0L);
             photoFile.setVoteCounter(0L);
-
             photoFileRepository.save(photoFile);
         } catch (IOException ex) {
             //throw new FileStorageException("Could not store file " + fileName + ". Please try again!", ex);
@@ -46,5 +43,13 @@ public class PhotoFileService {
     public PhotoFile getFile(Long fileId) {
         //return PhotoFileRepository.findById(fileId).orElseThrow(() -> new MyFileNotFoundException("File not found with id " + fileId));
         return photoFileRepository.findById(fileId).orElse(null);
+    }
+
+    public void deleteFile(Long id) {
+        photoFileRepository.deleteById(id);
+    }
+
+    public void update(PhotoFile file){
+        photoFileRepository.save(file);
     }
 }
