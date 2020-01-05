@@ -1,12 +1,13 @@
 package photoGallery.controllers;
 
-import org.apache.commons.codec.binary.Base64;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import photoGallery.model.PhotoFile.PhotoFile;
 import photoGallery.model.PhotoFile.PhotoFileService;
+
+import java.util.List;
 
 @Controller
 @RestController
@@ -33,8 +34,13 @@ public class HomeController {
         photoFileService.deleteFile(id);
     }
 
-    @PutMapping("photo/update")
+    @PutMapping("/photo/update")
     public void updatePhoto(@RequestBody PhotoFile file) {
         photoFileService.update(file);
+    }
+
+    @GetMapping("/photo/all")
+    public List<PhotoFile> findAll(){
+        return photoFileService.findAll();
     }
 }

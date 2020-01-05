@@ -1,5 +1,7 @@
 package photoGallery.model.PhotoFile;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import photoGallery.model.photoComment.PhotoComment;
 
 import javax.persistence.*;
@@ -25,6 +27,7 @@ public class PhotoFile {
     @Lob
     private byte[] data;
 
+    @JsonManagedReference
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true)
     private List<PhotoComment> comments = new ArrayList<>();
 
@@ -77,5 +80,13 @@ public class PhotoFile {
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+
+    public List<PhotoComment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<PhotoComment> comments) {
+        this.comments = comments;
     }
 }
