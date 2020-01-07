@@ -42,21 +42,6 @@ public class HomeController {
         photoFileService.changeRating(rating,photoFileService.getFile(id));
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @PostMapping("/uploadFile")
     public void uploadFile(@RequestParam("file") MultipartFile file) {
         photoFileService.storeFile(file);
