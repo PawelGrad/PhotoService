@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/exceptions/PhotoNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/PhotoServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +92,10 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="photoGallery.model.photoComment" />
+      <recent name="photoGallery.model.PhotoFile" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pawcik\Desktop\photoGallery\src\main\java\photoGallery" />
     </key>
@@ -175,16 +188,6 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e88f28e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e88f28e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@442b4ddd" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1e88f28e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5d56d1a1" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
           </expand>
           <select />
         </treeState>
@@ -201,7 +204,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
-      <workItem from="1577972247274" duration="31694000" />
+      <workItem from="1577972247274" duration="39667000" />
     </task>
     <servers />
   </component>

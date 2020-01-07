@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import photoGallery.model.PhotoFile.PhotoFile;
+import photoGallery.model.PhotoFile.PhotoFileDTO;
 import photoGallery.model.PhotoFile.PhotoFileService;
+
 
 import java.util.List;
 
@@ -18,6 +20,42 @@ public class HomeController {
     public HomeController(PhotoFileService photoFileService) {
         this.photoFileService = photoFileService;
     }
+
+    @GetMapping("/photo/show/{id}")
+    public PhotoFileDTO getConvertedPhoto(@PathVariable Long id){
+        return photoFileService.convertToDTO(photoFileService.getFile(id));
+
+    }
+
+    @GetMapping("/photo/getEntity/{id}")
+    public PhotoFile getEntityPhoto(@PathVariable Long id){
+        return photoFileService.getFile(id);
+    }
+
+    @GetMapping("/photo/getDTO/{id}")
+    public PhotoFileDTO getDTOPhoto(@PathVariable Long id){
+        return photoFileService.convertToDTO(photoFileService.getFile(id));
+    }
+
+    @PutMapping("/photo/rate/{id}")
+    public void ratePhoto(@PathVariable("id") Long id, @RequestBody Long rating) {
+        photoFileService.changeRating(rating,photoFileService.getFile(id));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @PostMapping("/uploadFile")
     public void uploadFile(@RequestParam("file") MultipartFile file) {
@@ -35,12 +73,14 @@ public class HomeController {
     }
 
     @PutMapping("/photo/update")
-    public void updatePhoto(@RequestBody PhotoFile file) {
+    public void updatePhoto(@RequestBody PhotoFileDTO file) {
         photoFileService.update(file);
     }
 
     @GetMapping("/photo/all")
-    public List<PhotoFile> findAll(){
+    public List<PhotoFileDTO> findAll(){
         return photoFileService.findAll();
     }
+
+
 }
