@@ -73,7 +73,7 @@ public class PhotoFileService {
 
     public String photoToString(byte[] data) {
         byte[] encodeBase64 = Base64.encodeBase64(data);
-        return new String(encodeBase64, StandardCharsets.UTF_8);
+        return new String(encodeBase64);
     }
 
     public PhotoFileDTO convertToDTO(PhotoFile photofile){
@@ -81,6 +81,8 @@ public class PhotoFileService {
         photoDTO.setId(photofile.getId());
         photoDTO.setData(photoToString(photofile.getData()));
         photoDTO.setRating(photofile.getRating());
+        photoDTO.setFileName(photofile.getFileName());
+        photoDTO.setFileType(photofile.getFileType());
         photoDTO.setVoteCounter(photofile.getVoteCounter());
         photoDTO.setComments(photofile.getComments());
         return photoDTO;
@@ -91,6 +93,8 @@ public class PhotoFileService {
         photoEntity.setId(photoDTO.getId());
         photoEntity.setData(Base64.decodeBase64(photoDTO.getData()));
         photoEntity.setRating(photoDTO.getRating());
+        photoEntity.setFileName(photoDTO.getFileName());
+        photoEntity.setFileType(photoDTO.getFileType());
         photoEntity.setVoteCounter(photoDTO.getVoteCounter());
         photoEntity.setComments(photoDTO.getComments());
         return photoEntity;

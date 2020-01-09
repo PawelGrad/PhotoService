@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/photoGallery/model/PhotoFile/PhotoFileServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +65,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -77,6 +83,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/photoGallery" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -84,6 +92,12 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="photoGallery.model.PhotoFile" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="photoGallery.model.photoComment" />
       <recent name="photoGallery.model.PhotoFile" />
@@ -104,7 +118,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.PhotoServiceApplication">
+    <configuration name="PhotoFileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotoFileService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.model.PhotoFile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="photoGallery.model.PhotoFile" />
+      <option name="MAIN_CLASS_NAME" value="photoGallery.model.PhotoFile.PhotoFileServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoFileServiceTest.changeRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotoFileService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.model.PhotoFile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="photoGallery.model.PhotoFile" />
+      <option name="MAIN_CLASS_NAME" value="photoGallery.model.PhotoFile.PhotoFileServiceTest" />
+      <option name="METHOD_NAME" value="changeRating" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoFileServiceTest.convertersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotoFileService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.model.PhotoFile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="photoGallery.model.PhotoFile" />
+      <option name="MAIN_CLASS_NAME" value="photoGallery.model.PhotoFile.PhotoFileServiceTest" />
+      <option name="METHOD_NAME" value="convertersTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoFileServiceTest.photoToStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotoFileService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.model.PhotoFile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="photoGallery.model.PhotoFile" />
+      <option name="MAIN_CLASS_NAME" value="photoGallery.model.PhotoFile.PhotoFileServiceTest" />
+      <option name="METHOD_NAME" value="photoToStringTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="PhotoFileService" />
       <option name="VM_PARAMETERS" />
@@ -168,6 +245,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PhotoServiceApplication" />
+        <item itemvalue="JUnit.PhotoFileServiceTest.photoToStringTest" />
+        <item itemvalue="JUnit.PhotoFileServiceTest.convertersTest" />
+        <item itemvalue="JUnit.PhotoFileServiceTest.changeRating" />
+        <item itemvalue="JUnit.PhotoFileServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +277,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
-      <workItem from="1577972247274" duration="40812000" />
+      <workItem from="1577972247274" duration="49135000" />
     </task>
     <servers />
   </component>
